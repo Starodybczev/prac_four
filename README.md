@@ -135,6 +135,10 @@ Navigation is implemented with **Jetpack Navigation Compose**.
 
 ---
 
+<p align="center">
+  <img src="https://i.gifer.com/origin/f6/f68740c9bc60626586df868e5efa830b_w200.gif" width="400" />
+</p>
+
 ## 📄 License
 
 Educational project created for learning and practice purposes.
