@@ -87,7 +87,7 @@ Navigation is implemented with **Jetpack Navigation Compose**.
 <p align="center">
   <img src="screen/prac_selected_book.jpg" width="250"/>
   <img src="screen/prac_selected_book__white.jpg" width="250"/>
-  <img src="screen/setings" width="250"/>
+  <img src="screen/setings.jpg" width="250"/>
 </p>
 
 ### Pinch-to-Zoom Text
