@@ -39,12 +39,17 @@ fun Header(navController: NavHostController, onToggleTheme: () -> Unit, onAbout:
     val sectionId = navBackStackEntry?.arguments?.getString("id")
     var menuExpanded by remember { mutableStateOf(false) }
 
-    val title = when {
-        currentRoute == "main" -> "Vacuum Book"
-        sectionId != null -> vacuumBook
-            .find { it.id == sectionId }
-            ?.title ?: "Section"
-        else -> ""
+    val title = when(currentRoute) {
+        "main" -> "Vacuum Book"
+        "about_us" -> "About Us"
+        else -> {
+            if(sectionId != null){
+                vacuumBook
+                    .find { it.id == sectionId }
+                    ?.title ?: "Section"
+            }else {""}
+        }
+
     }
 
     Row(
@@ -72,7 +77,7 @@ fun Header(navController: NavHostController, onToggleTheme: () -> Unit, onAbout:
             text = title,
             color = Color.White,
             style = MaterialTheme.typography.titleLarge,
-            modifier = Modifier.weight(1f) // 🔥 это важно
+            modifier = Modifier.weight(1f)
         )
 
         Box {
